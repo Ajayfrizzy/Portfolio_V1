@@ -1009,6 +1009,10 @@ footer {
     display: block;
   }
 
+  .hero-content{
+    padding-right: 0;
+  }
+
   .hero {
     height: auto;
     min-height: 50vh;
