@@ -1,0 +1,28 @@
+{
+  "name": "portfolio_backend",
+  "version": "1.0.0",
+  "main": "contact.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./api/contact.js",
+    "deploy": "vercel deploy --prod"
+  },
+  "keywords": [
+    "portfolio",
+    "contact",
+    "supabase",
+    "vercel"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Backend API for portfolio contact form",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "vercel": "^41.4.1"
+  }
+}

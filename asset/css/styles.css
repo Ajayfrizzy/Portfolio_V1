@@ -937,6 +937,32 @@ footer {
   transform: translateY(-5px);
 }
 
+.form-status {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+.form-status.success {
+  display: block;
+  background-color: rgba(75, 181, 67, 0.1);
+  color: #4BB543;
+  border: 1px solid #4BB543;
+}
+
+.form-status.error {
+  display: block;
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #FF0000;
+  border: 1px solid #FF0000;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
   .hero {
