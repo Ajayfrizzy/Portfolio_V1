@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
         try {
           // ✅ Replace with your actual Vercel deployment URL
-          const endpoint = 'https://your-vercel-project.vercel.app/api/contact';
+          const endpoint = 'https://portfoliobackend-ten-psi.vercel.app/api/contact';
   
           const response = await fetch(endpoint, {
             method: 'POST',
