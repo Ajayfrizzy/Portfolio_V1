@@ -121,14 +121,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Form submission handling
-    const contactForm = document.getElementById('contactForm');
+   /* const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Thank you for your message! I will get back to you soon.');
             this.reset();
         });
-    }
+    }*/
 
     // Animation on scroll
     // Get all sections that need to be animated
