@@ -21,7 +21,8 @@
     "@supabase/supabase-js": "^2.49.4",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "raw-body": "^3.0.0"
   },
   "devDependencies": {
     "vercel": "^41.4.1"
