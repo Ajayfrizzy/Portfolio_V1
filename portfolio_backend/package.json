@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node ./api/contact.js",
+    "type": "module",
     "deploy": "vercel deploy --prod"
   },
   "keywords": [
