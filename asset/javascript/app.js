@@ -15,7 +15,7 @@ const projects = [
         description: "A construction company that deals with Engineering Services, Procurement Services, Construction Services, Commissioning and Handover.",
         image: "/asset/img/project_2.png",
         tags: ["Reactjs", "Typewriter Effect", "Swiper"],
-        link: "https://pggrng.com/",
+        link: "https://pggrng.netlify.app/",
         github: "https://github.com/Ajayfrizzy/fortress_project"
     },
     {
