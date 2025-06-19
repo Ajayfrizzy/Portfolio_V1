@@ -8,7 +8,7 @@ const projects = [
       "This is my full stack website portfolio that contains majority of my works, has supabase implemented for the feedback coming from the website, animation was also implemented for interactivity",
     image: "/asset/img/project_9.png",
     tags: ["HTML", "CSS", "JavaScript", "Supabase"],
-    link: "https://mini-portfolio-ebon.vercel.app/",
+    link: "https://ajaytech.vercel.app/",
     github: "https://github.com/Ajayfrizzy/Mini_portfolio",
   },
   {
