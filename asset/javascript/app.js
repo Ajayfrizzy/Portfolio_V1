@@ -2,7 +2,7 @@
 
 // Project data
 const projects = [
-  {
+  /*{
     title: "Full Stack Personal Portfolio",
     description:
       "This is my full stack website portfolio that contains majority of my works, has supabase implemented for the feedback coming from the website, animation was also implemented for interactivity",
@@ -10,7 +10,7 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "Supabase"],
     link: "https://ajaytech.vercel.app/",
     github: "https://github.com/Ajayfrizzy/Mini_portfolio",
-  },
+  },*/
   {
     title: "Analytical Haven Website",
     description: "A Startup Company",
