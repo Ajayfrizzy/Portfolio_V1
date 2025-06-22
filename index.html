@@ -16,6 +16,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./asset/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
     <script src="./asset/javascript/app.js" defer></script>
     <script src="/asset/javascript/contact_form.js" defer></script>
   </head>
@@ -320,22 +321,22 @@
             <form id="contactForm">
               <div class="form-group" onsubmit="console.log('Form onsubmit handler, values:', this.name.value, this.email.value); return false;">
                 <label for="name">Name</label>
-                <input type="text" id="name" class="form-control" required />
+                <input type="text" id="name" class="form-control" name="user_name" required />
               </div>
 
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" required />
+                <input type="email" id="email" class="form-control" name="user_email" required />
               </div>
 
               <div class="form-group">
                 <label for="subject">Subject</label>
-                <input type="text" id="subject" class="form-control" required />
+                <input type="text" id="subject" class="form-control" name="subject" required />
               </div>
 
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" class="form-control" required></textarea>
+                <textarea id="message" class="form-control" name="message" required></textarea>
               </div>
 
               <div id="formStatus" class="form-status"></div>

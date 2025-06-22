@@ -41,7 +41,7 @@ const projects = [
       "A construction company that deals with Engineering Services, Procurement Services, Construction Services, Commissioning and Handover.",
     image: "/asset/img/project_2.png",
     tags: ["Reactjs", "Typewriter Effect", "Swiper"],
-    link: "https://pggrng.netlify.app/",
+    link: "https://fortress-pr.vercel.app/",
     github: "https://github.com/Ajayfrizzy/fortress_project",
   },
   {
@@ -51,6 +51,22 @@ const projects = [
     tags: ["TailwindCSS", "NextJs", "Api Integration"],
     link: "https://never-mind.vercel.app/",
     github: "https://github.com/Ajayfrizzy/New_pope_coin",
+  },
+  {
+    title: "Guesssing Game App",
+    description: "A Gaming App where you guessed the right number.",
+    image: "/asset/img/project_1.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://zuri-guessing-game.vercel.app/",
+    github: "https://github.com/Ajayfrizzy/zuri-guessing-game",
+  },
+  {
+    title: "To Do List App",
+    description: "A To do list App with basic functionality like adding, removing, filtering and checking off tasks with dark mode.",
+    image: "/asset/img/project_10.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://to-do-list-app-chi-ten.vercel.app/",
+    github: "https://github.com/Ajayfrizzy/To_Do_List_App.git",
   },
   {
     title: "Mini Ecommerce Website",
@@ -69,14 +85,6 @@ const projects = [
     tags: ["TypeScript", "ReactJs", "Supabase"],
     link: "https://vibe-coding-hackathon-olive.vercel.app/",
     github: "https://github.com/Ajayfrizzy/Mini_ecommerce",
-  },
-  {
-    title: "Guesssing Game App",
-    description: "A Gaming App where you guessed the right number.",
-    image: "/asset/img/project_1.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://ajayfrizzy.github.io/zuri-guessing-game/",
-    github: "https://github.com/Ajayfrizzy/zuri-guessing-game",
   },
 ];
 
