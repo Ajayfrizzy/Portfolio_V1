@@ -53,6 +53,14 @@ const projects = [
     github: "https://github.com/Ajayfrizzy/New_pope_coin",
   },
   {
+    title: "Weather App",
+    description: "A Weather App that provides weather information.",
+    image: "/asset/img/project_11.png",
+    tags: ["HTML", "TailwindCSS", "JavaScript"],
+    link: "https://weather-app-nine-mu-53.vercel.app/",
+    github: "https://github.com/Ajayfrizzy/Weather_app.git",
+  },
+  {
     title: "Guesssing Game App",
     description: "A Gaming App where you guessed the right number.",
     image: "/asset/img/project_1.png",
