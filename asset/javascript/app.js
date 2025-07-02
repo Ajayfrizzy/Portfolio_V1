@@ -85,7 +85,7 @@ const projects = [
     link: "https://github.com/Ajayfrizzy/New_pope_coin",
     github: "https://github.com/Ajayfrizzy/Mini_ecommerce",
   },
-  {
+  /*{
     title: "Full Stack Website for FarmConnect",
     description:
       "This is a full stack website with the following functionality features Authetication for users registration/login, adding of items features for farmers and some other features...",
@@ -93,7 +93,7 @@ const projects = [
     tags: ["TypeScript", "ReactJs", "Supabase"],
     link: "https://vibe-coding-hackathon-olive.vercel.app/",
     github: "https://github.com/Ajayfrizzy/Mini_ecommerce",
-  },
+  },*/
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
