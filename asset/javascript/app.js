@@ -12,6 +12,15 @@ const projects = [
     github: "https://github.com/Ajayfrizzy/Mini_portfolio",
   },*/
   {
+    title: "Smart BudgetGuard",
+    description:
+      "A Smart BudgetGuard is a full stack application that helps to manage your finances effectively, track expenses, and set budgets with ease.",
+    image: "/asset/img/project_12.png",
+    tags: ["ReactJs", "TailwindCss", "TypeScript", "Supabase"],
+    link: "https://ajay-budget-app.vercel.app/",
+    github: "https://github.com/Ajayfrizzy/Budget_app.git",
+  },
+  {
     title: "Analytical Haven Website",
     description: "A Startup Company",
     image: "/asset/img/project_5.png",
