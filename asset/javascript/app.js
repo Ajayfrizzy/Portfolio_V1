@@ -2,23 +2,15 @@
 
 // Project data
 const projects = [
-  /*{
-    title: "Full Stack Personal Portfolio",
-    description:
-      "This is my full stack website portfolio that contains majority of my works, has supabase implemented for the feedback coming from the website, animation was also implemented for interactivity",
-    image: "/asset/img/project_9.png",
-    tags: ["HTML", "CSS", "JavaScript", "Supabase"],
-    link: "https://ajaytech.vercel.app/",
-    github: "https://github.com/Ajayfrizzy/Mini_portfolio",
-  },*/
   {
-    title: "Smart BudgetGuard",
+    title: "Hotel Management System",
     description:
-      "A Smart BudgetGuard is a full stack application that helps to manage your finances effectively, track expenses, and set budgets with ease.",
-    image: "/asset/img/project_12.png",
-    tags: ["ReactJs", "TailwindCss", "TypeScript", "Supabase"],
-    link: "https://ajay-budget-app.vercel.app/",
-    github: "https://github.com/Ajayfrizzy/Budget_app.git",
+      "A Hotel Management System is a full stack application that helps to manage hotel operations, bookings, and customer services efficiently.",
+    image: "/asset/img/project_13.png",
+    tags: ["ReactJs", "TailwindCss", "Nodejs", "Supabase"],
+    link: "https://smile-tcontinental.com",
+    github: "https://github.com/Ajayfrizzy/smile_t_frontend.git",
+    status: "live", // Live production project
   },
   {
     title: "Analytical Haven Website",
@@ -27,6 +19,7 @@ const projects = [
     tags: ["TailwindCSS", "Reactjs"],
     link: "https://analytical-haven.vercel.app/",
     github: "https://github.com/Ajayfrizzy/Analytical_Haven",
+    status: "live", // Live production project
   },
   {
     title: "BlackBitcoin Website",
@@ -35,14 +28,7 @@ const projects = [
     tags: ["TailwindCSS", "NextJs"],
     link: "https://www.blackbitcoin.vip/",
     github: "https://github.com/Ajayfrizzy/black-bitcoin",
-  },
-  {
-    title: "House Booking",
-    description: "House Booking Website",
-    image: "/asset/img/project_4.png",
-    tags: ["TailwindCSS", "NextJs", "SwiperJs"],
-    link: "https://big-analytical-project.vercel.app/",
-    github: "https://github.com/Ajayfrizzy/big_analytical_project",
+    status: "live", // Live production project
   },
   {
     title: "Construction Website",
@@ -52,6 +38,17 @@ const projects = [
     tags: ["Reactjs", "Typewriter Effect", "Swiper"],
     link: "https://fortress-pr.vercel.app/",
     github: "https://github.com/Ajayfrizzy/fortress_project",
+    status: "live", // Live production project
+  },
+  {
+    title: "Smart BudgetGuard",
+    description:
+      "A Smart BudgetGuard is a full stack application that helps to manage your finances effectively, track expenses, and set budgets with ease.",
+    image: "/asset/img/project_12.png",
+    tags: ["ReactJs", "TailwindCss", "TypeScript", "Supabase"],
+    link: "https://ajay-budget-app.vercel.app/",
+    github: "https://github.com/Ajayfrizzy/Budget_app.git",
+    status: "practice", // Practice/Learning project
   },
   {
     title: "New Popecoin Website",
@@ -60,6 +57,16 @@ const projects = [
     tags: ["TailwindCSS", "NextJs", "Api Integration"],
     link: "https://never-mind.vercel.app/",
     github: "https://github.com/Ajayfrizzy/New_pope_coin",
+    status: "live", // Live production project
+  },
+  {
+    title: "House Booking",
+    description: "House Booking Website",
+    image: "/asset/img/project_4.png",
+    tags: ["TailwindCSS", "NextJs", "SwiperJs"],
+    link: "https://big-analytical-project.vercel.app/",
+    github: "https://github.com/Ajayfrizzy/big_analytical_project",
+    status: "practice", // // Practice/Learning project
   },
   {
     title: "Weather App",
@@ -68,6 +75,7 @@ const projects = [
     tags: ["HTML", "TailwindCSS", "JavaScript"],
     link: "https://weather-app-nine-mu-53.vercel.app/",
     github: "https://github.com/Ajayfrizzy/Weather_app.git",
+    status: "practice", // Practice/Learning project
   },
   {
     title: "Guesssing Game App",
@@ -76,6 +84,7 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://zuri-guessing-game.vercel.app/",
     github: "https://github.com/Ajayfrizzy/zuri-guessing-game",
+    status: "practice", // Practice/Learning project
   },
   {
     title: "To Do List App",
@@ -84,6 +93,7 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://to-do-list-app-chi-ten.vercel.app/",
     github: "https://github.com/Ajayfrizzy/To_Do_List_App.git",
+    status: "practice", // Practice/Learning project
   },
   {
     title: "Mini Ecommerce Website",
@@ -93,16 +103,8 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/Ajayfrizzy/New_pope_coin",
     github: "https://github.com/Ajayfrizzy/Mini_ecommerce",
+    status: "practice", // Practice/Learning project
   },
-  /*{
-    title: "Full Stack Website for FarmConnect",
-    description:
-      "This is a full stack website with the following functionality features Authetication for users registration/login, adding of items features for farmers and some other features...",
-    image: "/asset/img/project_8.png",
-    tags: ["TypeScript", "ReactJs", "Supabase"],
-    link: "https://vibe-coding-hackathon-olive.vercel.app/",
-    github: "https://github.com/Ajayfrizzy/Mini_ecommerce",
-  },*/
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -114,9 +116,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#interests">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><button id="mobileThemeToggle" class="theme-toggle-mobile">
+                      <i class="fas fa-moon"></i> <span>Dark Mode</span>
+                    </button></li>
                 </ul>
             </div>
             <div class="overlay"></div>
@@ -171,22 +176,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Load projects dynamically with show more/less functionality
+  // Load projects dynamically with show more/less functionality and filtering
   const projectsContainer = document.getElementById("projectsContainer");
+  const filterButtons = document.querySelectorAll(".filter-btn");
 
-  if (projectsContainer && Array.isArray(projects)) {
-    projectsContainer.innerHTML = ""; // Clear existing content
+  let currentFilter = "all";
+  let expanded = false;
+  const initialVisibleCount = 3;
 
-    const toggleButton = document.createElement("button");
-    toggleButton.className = "show-more-btn";
-    toggleButton.textContent = "Show More";
+  // Function to render projects based on filter
+  function renderProjects(filter = "all") {
+    if (!projectsContainer || !Array.isArray(projects)) return;
 
-    const initialVisibleCount = 3;
-    let expanded = false;
+    // Filter projects based on selected filter
+    let filteredProjects = projects;
+    if (filter !== "all") {
+      filteredProjects = projects.filter((project) => project.status === filter);
+    }
 
-    projects.forEach((project, index) => {
+    // Clear existing content
+    projectsContainer.innerHTML = "";
+
+    // Remove existing toggle button if present
+    const existingToggleBtn = document.querySelector(".show-more-btn");
+    if (existingToggleBtn) {
+      existingToggleBtn.remove();
+    }
+
+    // Render filtered projects
+    filteredProjects.forEach((project, index) => {
       const projectCard = document.createElement("div");
       projectCard.className = "project-card";
+      projectCard.setAttribute("data-status", project.status);
       projectCard.style.display =
         index >= initialVisibleCount ? "none" : "block";
 
@@ -216,32 +237,61 @@ document.addEventListener("DOMContentLoaded", function () {
       projectsContainer.appendChild(projectCard);
     });
 
-    if (projects.length > initialVisibleCount) {
-      // Append toggle button outside the grid
+    // Add show more/less button if there are more projects than initial count
+    if (filteredProjects.length > initialVisibleCount) {
+      const toggleButton = document.createElement("button");
+      toggleButton.className = "show-more-btn";
+      toggleButton.textContent = "Show More";
+
       projectsContainer.parentElement.appendChild(toggleButton);
-    }
 
-    toggleButton.addEventListener("click", () => {
-      const projectCards = projectsContainer.querySelectorAll(".project-card");
+      toggleButton.addEventListener("click", () => {
+        const projectCards =
+          projectsContainer.querySelectorAll(".project-card");
 
-      projectCards.forEach((card, index) => {
-        if (index >= initialVisibleCount) {
-          card.style.display = expanded ? "none" : "block";
+        projectCards.forEach((card, index) => {
+          if (index >= initialVisibleCount) {
+            card.style.display = expanded ? "none" : "block";
+          }
+        });
+
+        expanded = !expanded;
+        toggleButton.textContent = expanded ? "Show Less" : "Show More";
+
+        if (expanded) {
+          setTimeout(() => {
+            document
+              .querySelector("#projects")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }, 100);
         }
       });
+    }
 
-      expanded = !expanded;
-      toggleButton.textContent = expanded ? "Show Less" : "Show More";
-
-      if (expanded) {
-        setTimeout(() => {
-          document
-            .querySelector("#projects")
-            ?.scrollIntoView({ behavior: "smooth" });
-        }, 100);
-      }
-    });
+    // Reset expanded state when filter changes
+    expanded = false;
   }
+
+  // Initial render
+  renderProjects("all");
+
+  // Add event listeners to filter buttons
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Remove active class from all buttons
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+
+      // Add active class to clicked button
+      this.classList.add("active");
+
+      // Get filter value
+      const filter = this.getAttribute("data-filter");
+      currentFilter = filter;
+
+      // Render projects with selected filter
+      renderProjects(filter);
+    });
+  });
 
   // Animation on scroll
   // Get all sections that need to be animated
@@ -366,4 +416,96 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Theme Toggle Functionality
+  const themeToggle = document.getElementById("themeToggle");
+  const mobileThemeToggle = document.getElementById("mobileThemeToggle");
+  const html = document.documentElement;
+
+  // Check for saved theme preference or default to 'dark'
+  const currentTheme = localStorage.getItem("theme") || "dark";
+  html.setAttribute("data-theme", currentTheme);
+
+  // Update toggle button icon based on current theme
+  function updateThemeIcon(theme) {
+    const icon = theme === "light" ? "fa-moon" : "fa-sun";
+    const mobileText = theme === "light" ? "Dark Mode" : "Light Mode";
+    
+    if (themeToggle) {
+      themeToggle.querySelector("i").className = `fas ${icon}`;
+    }
+    if (mobileThemeToggle) {
+      mobileThemeToggle.querySelector("i").className = `fas ${icon}`;
+      mobileThemeToggle.querySelector("span").textContent = mobileText;
+    }
+  }
+
+  updateThemeIcon(currentTheme);
+
+  // Toggle theme function
+  function toggleTheme() {
+    const currentTheme = html.getAttribute("data-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    
+    html.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    updateThemeIcon(newTheme);
+  }
+
+  // Add event listeners
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleTheme);
+  }
+  if (mobileThemeToggle) {
+    mobileThemeToggle.addEventListener("click", toggleTheme);
+  }
+
+  // Statistics Counter Animation
+  const statNumbers = document.querySelectorAll(".stat-number");
+  let statsAnimated = false;
+
+  function animateStats() {
+    if (statsAnimated) return;
+    
+    statNumbers.forEach((stat) => {
+      const target = parseInt(stat.getAttribute("data-target"));
+      const duration = 2000; // 2 seconds
+      const increment = target / (duration / 16); // 60fps
+      let current = 0;
+
+      const updateCounter = () => {
+        current += increment;
+        if (current < target) {
+          stat.textContent = Math.floor(current);
+          requestAnimationFrame(updateCounter);
+        } else {
+          stat.textContent = target;
+          if (target > 50) {
+            stat.textContent = target + "+";
+          }
+        }
+      };
+
+      updateCounter();
+    });
+    
+    statsAnimated = true;
+  }
+
+  // Observe stats section for animation
+  const statsSection = document.querySelector(".stats");
+  if (statsSection) {
+    const statsObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateStats();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    statsObserver.observe(statsSection);
+  }
 });

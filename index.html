@@ -3,11 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AjayTECH</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+    <title>Oluwaseun Ajao | Full-Stack Software Engineer | AjayTECH</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Full-Stack Software Engineer specializing in React, Next.js, Node.js, and modern web development. View my portfolio of live projects and get in touch for opportunities." />
+    <meta name="keywords" content="Software Engineer, Full-Stack Developer, React Developer, Next.js, JavaScript, Web Development, Lagos Nigeria, Frontend Developer, Backend Developer" />
+    <meta name="author" content="Oluwaseun Ajao" />
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Oluwaseun Ajao - Full-Stack Software Engineer" />
+    <meta property="og:description" content="Passionate Software Engineer creating functional and beautiful web experiences with modern technologies." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ajaytech.vercel.app" />
+    <meta property="og:image" content="/asset/img/my_picture.jpg" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Oluwaseun Ajao - Full-Stack Software Engineer" />
+    <meta name="twitter:description" content="Passionate Software Engineer creating functional and beautiful web experiences." />
+    <meta name="twitter:image" content="/asset/img/my_picture.jpg" />
+    
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -15,10 +31,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
+    <!-- Styles and Scripts -->
     <link rel="stylesheet" href="./asset/css/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
     <script src="./asset/javascript/app.js" defer></script>
     <script src="/asset/javascript/contact_form.js" defer></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX'); // Replace with your actual Google Analytics ID
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -41,9 +68,12 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#interests">Interests</a></li>
+            <li><a href="#interests">Services</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+              <i class="fas fa-moon"></i>
+            </button></li>
           </ul>
         </nav>
       </div>
@@ -53,17 +83,17 @@
     <section class="hero">
       <div class="container hero-container">
         <div class="hero-content">
-          <!-- <h1>Hi, I'm Oluwaseun Ajao</h1> -->
+          <h1>Hi, I'm Oluwaseun Ajao</h1>
+          <h2>Full-Stack Software Engineer</h2>
           <p>
-           Seeing a website right from when I was in secondary school, I was so
-            fascinated by the way it works and the way it looks. I started learning how to build
-            websites and applications, and now I'm a Software Engineer with a
-            passion for creating functional and beautiful web experiences.
+            I build functional and beautiful web experiences with modern technologies. 
+            Specializing in React, Next.js, Node.js, and full-stack development, I turn 
+            complex challenges into elegant solutions that deliver real value.
           </p>
           <a href="#contact" class="btn">Get In Touch</a>
         </div>
         <div class="hero-image">
-          <img src="/asset/img/web_design.jpeg" alt="Hmtl closing tag" />
+          <img src="/asset/img/web_design.jpeg" alt="Web Development Illustration" />
         </div>
       </div>
     </section>
@@ -77,33 +107,56 @@
         </p>
         <div class="about-content">
           <div class="about-image">
-            <img src="/asset/img/my_picture.jpg" alt="My Image" />
+            <img src="/asset/img/my_picture.jpg" alt="Oluwaseun Ajao" />
           </div>
           <div class="about-text">
             <p>
-              Hi! I'm Oluwaseun Ajao, a passionate Software Engineer with a love
-              for creating functional and beautiful web experiences. With over
-              12 months of experience in the industry, I've had the opportunity
-              to work on a diverse range of projects that have helped me grow
-              both technically and creatively.
+              Hi! I'm Oluwaseun Ajao, a passionate Full-Stack Software Engineer with a love
+              for creating functional and beautiful web experiences. With over 2 years of 
+              professional experience, I've had the opportunity to work on diverse projects 
+              ranging from full-stack applications to production websites serving real users.
             </p>
             <p>
-              My journey into software development began during my polytechnic
-              years when I built my first website for a friend of mine. Since
-              then, I've been captivated by the constantly evolving nature of
-              software technologies and the endless possibilities they present.
+              My journey into software development began during my polytechnic years when I 
+              built my first website. Since then, I've been captivated by the constantly 
+              evolving nature of technology and the endless possibilities it presents. I 
+              specialize in React, Next.js, TypeScript, and Node.js, building scalable solutions 
+              that prioritize user experience and performance.
             </p>
             <p>
-              What drives me is the perfect balance of logical problem-solving
-              and creative expression that development offers. I thrive on
-              turning complex challenges into elegant solutions, all while
-              maintaining a focus on user experience and performance.
+              What drives me is the perfect balance of logical problem-solving and creative 
+              expression that development offers. I thrive on turning complex challenges into 
+              elegant solutions. When I'm not coding, you can find me listening to music, 
+              watching comedy skits, or contributing to open-source and volunteer projects.
             </p>
-            <p>
-              When I'm not coding, you can find me listening to music or
-              watching some comedy skit, contributing to open-source projects or
-              volunteer projects.
-            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-container">
+          <div class="stat-item">
+            <i class="fas fa-code"></i>
+            <h3 class="stat-number" data-target="11">0</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-calendar-alt"></i>
+            <h3 class="stat-number" data-target="2">0</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <h3 class="stat-number" data-target="5">0</h3>
+            <p>Live Projects</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-coffee"></i>
+            <h3 class="stat-number" data-target="300">0</h3>
+            <p>Cups of Coffee</p>
           </div>
         </div>
       </div>
@@ -114,7 +167,7 @@
       <div class="container">
         <h2>My Skills</h2>
         <p class="section-description">
-          Here are some of the technologies and languages I'm proficient in.
+          Technologies and tools I use to bring ideas to life.
         </p>
         <div class="skills-container">
           <div class="skill-card">
@@ -131,31 +184,27 @@
           </div>
           <div class="skill-card">
             <i class="fab fa-react"></i>
-            <h3>React/NextJs</h3>
+            <h3>React/Next.js</h3>
           </div>
           <div class="skill-card">
             <i class="fab fa-node-js"></i>
             <h3>Node.js</h3>
           </div>
-          <!-- <div class="skill-card">
-            <i class="fab fa-python"></i>
-            <h3>Python</h3>
-          </div> -->
           <div class="skill-card">
             <i class="fas fa-database"></i>
             <h3>MongoDB</h3>
           </div>
           <div class="skill-card">
-            <i class="fas fa-server"></i>
+            <i class="fas fa-database"></i>
             <h3>SQL</h3>
           </div>
           <div class="skill-card">
-            <i class="fas fa-server"></i>
-            <h3>PostGreSQL</h3>
+            <i class="fas fa-database"></i>
+            <h3>PostgreSQL</h3>
           </div>
           <div class="skill-card">
-            <i class="fa-brands fa-figma"></i>
-            <h3>UI/UX</h3>
+            <i class="fab fa-figma"></i>
+            <h3>UI/UX Design</h3>
           </div>
         </div>
       </div>
@@ -168,20 +217,13 @@
         <p class="section-description">My academic journey and credentials.</p>
 
         <div class="timeline">
-          <!-- <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Ordinary National Diploma (OND)</h3>
-              <h4>Yaba College of Technology, Lagos</h4>
-              <p>2018 - 2021</p>
-              <p>Computer Science</p>
-            </div>
-          </div> -->
           <div class="timeline-item">
             <div class="timeline-content">
               <h3>Higher National Diploma (HND)</h3>
               <h4>Yaba College of Technology, Lagos, Nigeria</h4>
               <p>2018 - 2025</p>
-              <p>Computer Science</p>
+              <p>Computer Science - Focused on software engineering, data structures, 
+                 algorithms, and modern web technologies.</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -190,8 +232,8 @@
               <h4>Codeverse Africa</h4>
               <p>2023</p>
               <p>
-                Completed an intensive program covering frontend web development
-                technologies and best practices.
+                Completed an intensive program covering HTML5, CSS3, JavaScript, 
+                responsive design.
               </p>
             </div>
           </div>
@@ -201,8 +243,8 @@
               <h4>Zuri Team</h4>
               <p>2024</p>
               <p>
-                Completed an intensive program covering frontend web development
-                technologies and best practices.
+                Advanced training in JavaScript, React, 
+                and building production-ready web applications with best practices.
               </p>
             </div>
           </div>
@@ -212,8 +254,8 @@
               <h4>TechyJaunt</h4>
               <p>2024/2025</p>
               <p>
-                Completed an intensive program covering frontend web development
-                technologies and best practices.
+                Comprehensive program covering modern web development technologies, 
+                including API integration, state management and deployment strategies.
               </p>
             </div>
           </div>
@@ -227,37 +269,37 @@
       </div>
     </section>
 
-    <!-- Interests Section -->
+    <!-- What I Offer Section -->
     <section id="interests" class="interests">
       <div class="container">
-        <h2>Interests</h2>
+        <h2>What I Offer</h2>
         <p class="section-description">
-          What excites me about technology and my professional focus areas.
+          Professional services and solutions I provide to bring your ideas to life.
         </p>
 
         <div class="interests-container">
           <div class="interest-card">
-            <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+            <h3><i class="fas fa-laptop-code"></i> Full-Stack Development</h3>
             <p>
-              Exploring modern frameworks and best practices in web development.
-              I'm particularly interested in progressive web apps and the latest
-              advancements in JavaScript frameworks.
+              End-to-end web application development using modern technologies like 
+              React, Next.js, Node.js, and databases. From concept to deployment, 
+              I build scalable and performant solutions.
             </p>
           </div>
           <div class="interest-card">
-            <h3><i class="fas fa-mobile-alt"></i> Responsive Design</h3>
+            <h3><i class="fas fa-mobile-alt"></i> Responsive Web Design</h3>
             <p>
-              Creating seamless experiences across all devices. I believe in
-              mobile-first design and ensuring accessibility for all users
-              regardless of their device or abilities.
+              Mobile-first, responsive websites that look great on any device. 
+              I create intuitive user interfaces with modern CSS frameworks and 
+              ensure accessibility for all users.
             </p>
           </div>
           <div class="interest-card">
-            <h3><i class="fas fa-server"></i> Backend Architecture</h3>
+            <h3><i class="fas fa-code"></i> API Development & Integration</h3>
             <p>
-              Building scalable and secure server-side applications. I enjoy
-              working with RESTful APIs and exploring microservices
-              architecture.
+              RESTful API development and third-party service integration. 
+              I build robust backend systems and seamlessly connect external 
+              services to enhance functionality.
             </p>
           </div>
         </div>
@@ -272,8 +314,81 @@
           Some of my recent work that showcases my skills and expertise.
         </p>
 
+        <!-- Project Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="live">Live Projects</button>
+          <button class="filter-btn" data-filter="practice">Practice Projects</button>
+        </div>
+
         <div class="projects-container" id="projectsContainer">
           <!-- Projects will be loaded dynamically via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <h2>What People Say</h2>
+        <p class="section-description">
+          Feedback from clients and colleagues I've worked with.
+        </p>
+        
+        <div class="testimonials-container">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>
+                "Oluwaseun delivered an exceptional website for our startup. His attention 
+                to detail and ability to translate our vision into reality was impressive. 
+                The site is fast, responsive, and exactly what we needed."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="/asset/img/avatar1.jpg" alt="Client" onerror="this.src='https://ui-avatars.com/api/?name=Omowonuola+Fagbemi&background=64ffda&color=0a192f'">
+              <div class="author-info">
+                <h4>Omowonuola Fagbemi</h4>
+                <p>Founder, Analytical Haven</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>
+                "Working with Oluwaseun was a great experience. He's professional, 
+                communicative, and his technical skills are top-notch. He completed 
+                our project ahead of schedule with excellent quality."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="/asset/img/avatar2.jpg" alt="Client" onerror="this.src='https://ui-avatars.com/api/?name=Fortress&background=64ffda&color=0a192f'">
+              <div class="author-info">
+                <h4>Fortress</h4>
+                <p>UI/UX, Fortress Construction</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>
+                "Oluwaseun's expertise in React and Next.js helped us build a scalable 
+                solution that handles our growing user base effortlessly. Highly recommended 
+                for any serious web development project."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="/asset/img/avatar3.jpg" alt="Client" onerror="this.src='https://ui-avatars.com/api/?name=Emmanuel+Nabobish&background=64ffda&color=0a192f'">
+              <div class="author-info">
+                <h4>Emmanuel Nabobish</h4>
+                <p>Tech Lead, BlackBitcoin</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -323,7 +438,7 @@
 
           <div class="contact-form">
             <form id="contactForm">
-              <div class="form-group" onsubmit="console.log('Form onsubmit handler, values:', this.name.value, this.email.value); return false;">
+              <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" class="form-control" name="user_name" required />
               </div>
