@@ -1,8 +1,8 @@
-# AjayTECH Portfolio Website
+# 🚀 AjayTECH Portfolio Website
 
-A modern, responsive portfolio website showcasing Oluwaseun Ajao's skills, projects, and professional experience as a Software Engineer.
+A modern, feature-rich portfolio website showcasing Oluwaseun Ajao's skills, projects, and professional experience as a Full-Stack Software Engineer.
 
-![Portfolio Website Preview](/asset/img/my_picture_2.jpg)
+![Portfolio Website](https://img.shields.io/badge/Portfolio-Live-brightgreen) ![Version](https://img.shields.io/badge/version-2.0-blue) ![License](https://img.shields.io/badge/license-MIT-orange)
 
 ## 📋 Table of Contents
 
@@ -12,253 +12,404 @@ A modern, responsive portfolio website showcasing Oluwaseun Ajao's skills, proje
 - [Project Structure](#project-structure)
 - [Setup & Installation](#setup--installation)
 - [Deployment](#deployment)
-- [API Integration](#api-integration)
+- [New Features (v2.0)](#new-features-v20)
 - [Project Showcase](#project-showcase)
-- [Customization](#customization)
+- [Theme Customization](#theme-customization)
+- [Analytics Setup](#analytics-setup)
 - [Performance Optimization](#performance-optimization)
 - [Browser Compatibility](#browser-compatibility)
-- [Known Issues](#known-issues)
-- [Future Improvements](#future-improvements)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
 ## 🌟 Overview
 
-This portfolio website serves as a professional showcase for Oluwaseun Ajao, highlighting skills, projects, education, and experience. It features a clean, modern design with responsive layout that works across all devices and screen sizes.
+This portfolio website serves as a comprehensive professional showcase for Oluwaseun Ajao, a Full-Stack Software Engineer specializing in React, Next.js, TypeScript, and Node.js. The site features a modern, responsive design with dark/light mode support, animated statistics, client testimonials, and a blog section.
 
-The site incorporates both frontend and backend functionality, with a contact form that stores submissions in a Supabase database.
+**Live Demo:** [Your Portfolio URL]
 
 ## ✨ Features
 
-- **Responsive Design**: Optimized for all devices from mobile to desktop
-- **Dynamic Projects Section**: Automatically populated from JavaScript data
-- **Interactive UI Elements**: Animations, smooth scrolling, and hover effects
-- **Contact Form**: Backend integration with form validation and database storage
-- **Professional Sections**: About, Skills, Education, Interests, and Projects
-- **Dark Mode**: Stylish dark theme with accent colors
-- **Social Media Integration**: Links to GitHub, LinkedIn, Twitter, and Instagram
-- **Downloadable CV**: Option to download resume/CV
-- **Animated Section Transitions**: Elements animate into view during scrolling
+### 🎨 **Design & UI/UX**
+- ✅ **Responsive Design**: Optimized for all devices (mobile, tablet, desktop)
+- ✅ **Dark/Light Mode Toggle**: User-customizable theme with persistent preference
+- ✅ **Smooth Animations**: Scroll-triggered animations and transitions
+- ✅ **Interactive Elements**: Hover effects, parallax scrolling, and dynamic content
+- ✅ **Professional Layout**: Clean, modern design with accent colors
+
+### 📊 **Core Sections**
+- ✅ **Hero Section**: Eye-catching introduction with animated headings
+- ✅ **About Me**: Professional summary with condensed, impactful content
+- ✅ **Statistics Dashboard**: Animated counters (Projects, Experience, Live Sites, Coffee ☕)
+- ✅ **Skills Showcase**: Technology icons with hover effects
+- ✅ **Education Timeline**: Academic background with detailed descriptions
+- ✅ **Services/Offerings**: What you provide to clients
+- ✅ **Projects Portfolio**: Filterable projects (All, Live, Practice)
+- ✅ **Testimonials**: Client feedback with avatars and quotes
+- ✅ **Contact Form**: Email integration with form validation
+
+### 🚀 **Advanced Features**
+- ✅ **Project Filtering**: Filter by Live Projects or Practice Projects
+- ✅ **Show More/Less**: Expandable project lists
+- ✅ **Scroll-to-Top Button**: Smooth navigation to top
+- ✅ **Mobile Menu**: Hamburger navigation for mobile devices
+- ✅ **SEO Optimized**: Meta tags, Open Graph, Twitter Cards
+- ✅ **Google Analytics**: Traffic tracking and user insights
+- ✅ **Email Integration**: EmailJS for contact form
+- ✅ **Custom Cursor**: Enhanced user experience (desktop)
+- ✅ **Social Media Links**: GitHub, LinkedIn, Twitter, Instagram
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- HTML5
-- CSS3 (Custom styling)
-- JavaScript (ES6+)
-- FontAwesome for icons
+- **HTML5**: Semantic markup
+- **CSS3**: Custom styling with CSS variables
+- **JavaScript (ES6+)**: Vanilla JS, no frameworks
+- **Font Awesome 6.7.2**: Icon library
 
-### Backend
-- Node.js 
-- Supabase (Database and authentication)
-- Vercel (Serverless functions)
+### Backend & Services
+- **EmailJS**: Contact form email delivery
+- **Google Analytics 4**: User tracking and insights
+- **LocalStorage**: Theme preference persistence
 
-### Tools & Libraries
-- Intersection Observer API for scroll animations
-- Custom form validation
-- Responsive design without frameworks
+### Tools & APIs
+- **Intersection Observer API**: Scroll animations
+- **Custom Form Validation**: Client-side validation
+- **CSS Grid & Flexbox**: Modern responsive layouts
+- **CSS Variables**: Theme switching
 
 ## 📂 Project Structure
 
 ```
-portfolio-website/
+Portfolio_V1/
 ├── asset/
 │   ├── css/
-│   │   └── styles.css
+│   │   └── styles.css           # Main stylesheet with dark/light themes
 │   ├── img/
-│   │   ├── my_picture.jpg
-│   │   ├── my_picture_2.jpg
-│   │   ├── project_1.png
-│   │   ├── project_2.png
-│   │   └── project_3.png
+│   │   ├── my_picture.jpg       # Profile photo
+│   │   ├── web_design.jpeg      # Hero section image
+│   │   ├── project_*.png        # Project screenshots
+│   │   ├
+│   │   └── avatar*.jpg          # Testimonial avatars (optional)
 │   ├── javascript/
-│   │   ├── app.js
-│   │   └── contact_form.js
+│   │   ├── app.js               # Main JavaScript (projects, animations, theme)
+│   │   └── contact_form.js      # Contact form logic with EmailJS
 │   └── others/
-│       └── cv.pdf
-├── api/
-│   └── contact.js
-├── index.html
-├── README.md
-└── .env (not included in repository)
+│       └── cv.pdf               # Downloadable resume
+├── index.html                   # Main HTML file
+├── README.md                    # This file
+├── LICENSE                      # MIT License
+└── .gitignore                   # Git ignore file
 ```
 
 ## 🚀 Setup & Installation
 
 ### Prerequisites
-- Node.js and npm installed
-- Supabase account
-- Vercel account (for deployment)
+- A modern web browser
+- Text editor (VS Code recommended)
+- Git installed
+- EmailJS account (for contact form)
+- Google Analytics account (optional, for tracking)
 
 ### Local Development
-1. Clone the repository:
+
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
-   cd portfolio-website
+   git clone https://github.com/Ajayfrizzy/Portfolio_V1.git
+   cd Portfolio_V1
    ```
 
-2. Set up environment variables:
-   Create a `.env` file in the root directory with the following variables:
-   ```
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-   SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_key
-   ```
-
-3. Install dependencies (if using npm):
+2. **Open the project:**
    ```bash
-   npm install
+   # Open index.html in your browser
+   # Or use a local server (recommended):
+   
+   # Using Python 3
+   python -m http.server 8000
+   
+   # Using Node.js http-server
+   npx http-server
+   
+   # Using VS Code Live Server extension
+   # Right-click index.html > Open with Live Server
    ```
 
-4. Run the development server:
-   ```bash
-   npm run dev
+3. **Access the site:**
+   ```
+   http://localhost:8000
    ```
 
-5. Open your browser and navigate to `http://localhost:3000`
+### EmailJS Configuration
+
+1. Create an account at [EmailJS](https://www.emailjs.com/)
+2. Create an email service
+3. Create an email template
+4. Update `contact_form.js` with your credentials:
+   ```javascript
+   emailjs.init("YOUR_PUBLIC_KEY");
+   
+   emailjs.sendForm(
+     "YOUR_SERVICE_ID",
+     "YOUR_TEMPLATE_ID",
+     form
+   )
+   ```
 
 ## 📤 Deployment
 
-### Deploying to Vercel
-1. Push your code to a GitHub repository
-2. Connect your repository to Vercel
-3. Configure environment variables in Vercel dashboard
-4. Deploy the application
+### Option 1: GitHub Pages
+```bash
+# Push to GitHub
+git add .
+git commit -m "Deploy portfolio"
+git push origin main
 
-### Supabase Setup
-1. Create a new Supabase project
-2. Create a `contact_messages` table with the following columns:
-   - id (int, primary key)
-   - name (varchar)
-   - email (varchar)
-   - subject (varchar)
-   - message (text)
-   - submitted_at (timestamp)
-3. Set up Row Level Security policies as needed
-
-## 🔌 API Integration
-
-The contact form uses a serverless function deployed on Vercel that connects to Supabase:
-
-```javascript
-// Example API route (api/contact.js)
-const { createClient } = require('@supabase/supabase-js');
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
-
-module.exports = async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
-
-  try {
-    const { name, email, subject, message } = req.body;
-    
-    // Insert data into Supabase
-    const { error } = await supabase
-      .from('contact_messages')
-      .insert([{ name, email, subject, message, submitted_at: new Date() }]);
-
-    if (error) throw error;
-    
-    return res.status(200).json({ success: true });
-  } catch (err) {
-    return res.status(500).json({ error: 'Internal server error' });
-  }
-};
+# Enable GitHub Pages in repository settings
+# Select main branch > /root folder
 ```
+
+### Option 2: Vercel
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+
+# Follow prompts
+```
+
+### Option 3: Netlify
+1. Drag and drop the project folder to [Netlify Drop](https://app.netlify.com/drop)
+2. Or connect your GitHub repository
+
+## 🆕 New Features (v2.0)
+
+### 1. **Dark/Light Mode Toggle** 🌓
+- Toggle button in navigation and mobile menu
+- Smooth theme transitions
+- Persistent preference using localStorage
+- Complete color scheme for both themes
+
+### 2. **Statistics Section** 📊
+- Animated counters that count up when scrolled into view
+- 4 key metrics: Projects, Experience, Live Sites, Coffee
+- Glassmorphism card design with hover effects
+- Responsive grid layout
+
+### 3. **Testimonials Section** 💬
+- Client feedback cards with quotes
+- Profile images with fallback avatars
+- Hover animations and effects
+- 3-column responsive grid
+
+### 4. **Blog Section** 📝
+- Featured articles with images
+- Date badges and "Read More" links
+- Image zoom on hover
+- Placeholder for future blog integration
+
+### 5. **Project Filtering** 🔍
+- Filter buttons: All | Live | Practice
+- Smooth filter transitions
+- Active state highlighting
+- Maintains "Show More/Less" functionality
+
+### 6. **Google Analytics Integration** 📈
+- GA4 tracking code ready
+- Page view tracking
+- Event tracking capability
+- Just add your Measurement ID
+
+### 7. **Enhanced SEO** 🔍
+- Meta description and keywords
+- Open Graph tags for social sharing
+- Twitter Card integration
+- Improved page title
 
 ## 💼 Project Showcase
 
-The projects section is populated dynamically from a JavaScript array:
+Projects are dynamically loaded from the `projects` array in `app.js`:
 
 ```javascript
 const projects = [
-    {
-        title: "Guesssing Game App",
-        description: "A Gaming App where you guessed the right number.",
-        image: "/asset/img/project_1.png",
-        tags: ["HTML", "CSS", "JavaScript"],
-        link: "https://ajayfrizzy.github.io/zuri-guessing-game/",
-        github: "https://github.com/Ajayfrizzy/zuri-guessing-game"
-    },
-    // Additional projects...
+  {
+    title: "Hotel Management System",
+    description: "Full stack hotel management application...",
+    image: "/asset/img/project_12.png",
+    tags: ["ReactJs", "TailwindCss", "Nodejs", "Supabase"],
+    link: "https://ajay-budget-app.vercel.app/",
+    github: "https://github.com/Ajayfrizzy/Budget_app.git",
+    status: "live" // or "practice"
+  },
+  // More projects...
 ];
 ```
 
-To add a new project, simply add another object to this array in `app.js`.
+### Adding a New Project
+1. Add a new object to the `projects` array
+2. Set `status: "live"` or `status: "practice"`
+3. Add project screenshot to `asset/img/`
+4. Include tags and links
 
-## 🎨 Customization
+## 🎨 Theme Customization
 
-### Styling
-The main styling is controlled in `asset/css/styles.css`. Key customizable elements include:
+### Changing Colors
 
-- Color scheme (defined as CSS variables)
-- Font families and sizes
-- Animation speeds and effects
-- Section layouts and spacing
+Edit CSS variables in `styles.css`:
 
-### Content
-Update the following to personalize the portfolio:
+```css
+/* Dark Mode */
+:root, [data-theme="dark"] {
+  --primary-color: #4a6fa5;
+  --accent-color: #64ffda;
+  --text-color: #e6e6e6;
+  --dark-navy: #0a192f;
+  /* ... */
+}
 
-1. Profile images in the `asset/img/` directory
-2. Personal information in `index.html`
-3. Projects array in `app.js`
-4. CV/resume file in `asset/others/`
+/* Light Mode */
+[data-theme="light"] {
+  --primary-color: #2563eb;
+  --accent-color: #0891b2;
+  --text-color: #1f2937;
+  /* ... */
+}
+```
+
+### Custom Fonts
+
+Update the Google Fonts import and font-family:
+
+```css
+@import url("https://fonts.googleapis.com/css2?family=Your+Font&display=swap");
+
+* {
+  font-family: "Your Font", sans-serif;
+}
+```
+
+## 📈 Analytics Setup
+
+### Google Analytics 4
+
+1. Create a GA4 property at [Google Analytics](https://analytics.google.com/)
+2. Get your Measurement ID (format: `G-XXXXXXXXXX`)
+3. Replace the placeholder in `index.html`:
+
+```html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX'); // Replace with your ID
+</script>
+```
 
 ## ⚡ Performance Optimization
 
-The site implements several performance optimizations:
+The site implements several optimizations:
 
-- Lazy loading for images
-- Minified CSS and JavaScript (recommended for production)
-- Intersection Observer for efficient animations
-- Optimized asset loading
+- ✅ **Lazy Loading**: Images load as needed
+- ✅ **CSS Variables**: Efficient theme switching
+- ✅ **Intersection Observer**: Efficient scroll animations
+- ✅ **Minimal Dependencies**: No heavy frameworks
+- ✅ **Optimized Assets**: Compressed images recommended
+- ✅ **Efficient JavaScript**: Event delegation and debouncing
+
+### Performance Tips
+
+```bash
+# Optimize images
+# Use tools like TinyPNG or ImageOptim
+
+# Minify CSS and JS for production
+# Use online tools or build scripts
+
+# Enable caching on your hosting platform
+```
 
 ## 🌐 Browser Compatibility
 
-The website is tested and compatible with:
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Android Chrome)
+Tested and compatible with:
 
-## 🐛 Known Issues
-
-- Contact form may require CORS configuration for certain deployment setups
-- Animation performance on older mobile devices may vary
-
-## 🚀 Future Improvements
-
-- Add blog section
-- Implement dark/light theme toggle
-- Add more interactive project demos
-- Integrate with additional APIs
-- Add language switcher for multilingual support
+| Browser | Version | Status |
+|---------|---------|--------|
+| Chrome | Latest | ✅ Fully Supported |
+| Firefox | Latest | ✅ Fully Supported |
+| Safari | Latest | ✅ Fully Supported |
+| Edge | Latest | ✅ Fully Supported |
+| iOS Safari | 12+ | ✅ Fully Supported |
+| Android Chrome | Latest | ✅ Fully Supported |
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Here's how you can help:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. **Fork the repository**
+2. **Create a feature branch:**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **Commit your changes:**
+   ```bash
+   git commit -m 'Add some amazing feature'
+   ```
+4. **Push to the branch:**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. **Open a Pull Request**
+
+### Contribution Guidelines
+- Follow existing code style
+- Test on multiple browsers
+- Update README if needed
+- Add comments for complex logic
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📬 Contact
 
-Oluwaseun Ajao - [ajayholuwaseun@gmail.com](mailto:ajayholuwaseun@gmail.com)
+**Oluwaseun Ajao** - Full-Stack Software Engineer
 
-GitHub: [Ajayfrizzy](https://github.com/Ajayfrizzy)
-LinkedIn: [ajayfrizzy](https://www.linkedin.com/in/ajayfrizzy/)
-Twitter: [ajay_frizzy](https://www.x.com/ajay_frizzy)
-Instagram: [ajay_frizzy](https://www.instagram.com/ajay_frizzy)
+- 📧 Email: [ajayholuwaseun@gmail.com](mailto:ajayholuwaseun@gmail.com)
+- 🐙 GitHub: [@Ajayfrizzy](https://github.com/Ajayfrizzy)
+- 💼 LinkedIn: [ajayfrizzy](https://www.linkedin.com/in/ajayfrizzy/)
+- 🐦 Twitter: [@ajay_frizzy](https://www.x.com/ajay_frizzy)
+- 📷 Instagram: [@ajay_frizzy](https://www.instagram.com/ajay_frizzy)
+- 📍 Location: Lagos, Nigeria
+
+---
+
+### 🌟 Show Your Support
+
+Give a ⭐️ if you like this project!
+
+### 📝 Changelog
+
+**v2.0** (November 2025)
+- Added dark/light mode toggle
+- Implemented statistics section with animated counters
+- Added testimonials section
+- Created blog section
+- Enhanced project filtering
+- Integrated Google Analytics
+- Improved SEO with meta tags
+- Refined hero section styling
+- Updated About, Education, and Services sections
+- Fixed PostgreSQL icon display
+- Mobile menu enhancements
+
+**v1.0** (Initial Release)
+- Basic portfolio structure
+- Project showcase
+- Contact form
+- Responsive design
+
+---
+
+Made with ❤️ by [Oluwaseun Ajao](https://github.com/Ajayfrizzy)
