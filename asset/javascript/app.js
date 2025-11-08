@@ -101,7 +101,7 @@ const projects = [
       "Mini ecommerce with some little functionality which include filter, delete, carting of items and others...",
     image: "/asset/img/project_7.png",
     tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://github.com/Ajayfrizzy/New_pope_coin",
+    link: "https://mini-ecommerce-ashy-seven.vercel.app/",
     github: "https://github.com/Ajayfrizzy/Mini_ecommerce",
     status: "practice", // Practice/Learning project
   },
