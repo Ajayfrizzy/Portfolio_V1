@@ -1256,7 +1256,7 @@ section.in-view .contact-form {
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--text-color);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(1, 47, 36, 0.2);
   border-radius: 4px;
   font-size: 16px;
   transition: border-color 0.3s, box-shadow 0.3s;
